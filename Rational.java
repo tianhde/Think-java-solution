@@ -39,12 +39,12 @@ public class Rational{
     return (double)numerator/denominator;
   }
   
-  //To reduce the rational(Ô¼·Ö£© (pure function:no change to the original objects)
+  //To reduce the rationalï¼‰ (pure function:no change to the original objects)
  public Rational reduce(){
       int gcd = gcd(numerator,denominator);
-      //²»ĞèÒªÓĞÒ»¸öobjectÀ´ÓÃÕâ¸önon-static method??
+   
       return new Rational(this.numerator / gcd, this.denominator / gcd); 
-      //pure funtion method:¿ÉÒÔÍ¨¹ınew keywordÀ´´´½¨Ò»¸öĞÂµÄObject
+   
    }
    //method to find the greatest common divisor
     public int gcd(int a,int b){
